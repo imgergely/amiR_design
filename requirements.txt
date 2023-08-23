@@ -1,0 +1,5 @@
+biopython==1.81
+pandas==1.5.2
+regex==2022.10.31
+streamlit==1.15.2
+dropbox==11.36.2 
