@@ -14,14 +14,14 @@ def dropbox_list_files(path):
         return files_list
 
     except Exception as e:
-        print('Error getting list of files from Dropbox: ' + str(e))
+        print('Error getting the list of Database files: ' + str(e))
 
 
 def dropbox_connect():
     try:
         dbx = dropbox.Dropbox(st.secrets["access_token"])
     except Exception as e:
-        st.write('Error connecting to Database: ' + str(e))
+        st.write('Error connecting to the Database: ' + str(e))
     return dbx
 
 
@@ -48,7 +48,7 @@ def dropbox_download_files():
             open(flag_file_path, "w").close()
 
         except Exception as e:
-            print('Error downloading files from Dropbox: ' + str(e))
+            print('Error downloading the Database: ' + str(e))
 
 
 
